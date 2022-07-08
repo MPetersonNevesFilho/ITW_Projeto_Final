@@ -1,0 +1,444 @@
+body{
+    background-color: black;
+    font-family: 'Open Sans', Arial, sans-serif;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    color:white;
+}
+.divao{
+    justify-content: center;
+    margin-top: 25px;
+    margin-left: 10%;
+    margin-right: 10%;
+    align-content: center;
+    text-align: justify;
+}
+
+ul.list1{
+    list-style-type: disc;
+}
+ul.list2{
+    list-style-type: circle;
+}
+.dropdown{
+    margin-top: 25px;
+}
+.letra {
+    text-shadow: -1px 0 black, 0 2px black,1px 0 black, 0 -1px black
+}
+.container{
+    display: flex;
+    justify-content: space-around;
+}
+.bonitotudo{
+    width: 100%;
+    padding: 0px;
+    margin-top: 20px;
+    justify-content: space-around;
+    flex-direction: row;
+    margin-bottom: 10px;
+}
+.filme1{
+    justify-content: center;
+    flex-direction: row;
+    display: flex;
+}
+.bonitoinput{
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-left: 20px;
+    flex-grow: 2;
+    width: 30px;
+    margin-right: 10px;
+}
+.bonitoradio{
+    align-items: center;
+    flex-grow: 3;
+    width: 15px;
+    height: 80px;
+}
+#ibm{
+    justify-content: right;
+}
+
+.dados {
+    background-color: white;
+}
+
+/*Seção de termos e Condições*/
+
+.global{
+    background-color: white;
+    padding-top: 30px;
+}
+
+.conditions{
+    font-family: Helvetica,Arial,sans-serif;
+    background-color: white;    
+    padding: 0px 48px;
+    margin: 0px 146.5px;
+}
+.conditions h2{
+    font-weight: bolder;
+    color: black;
+}
+
+.conditions p{
+    margin: 0px 0px 16px;
+    color: #221f1f;
+}
+
+.conditions ol{
+    margin: 24px 0px;
+    padding: 0px 0px 0px 32px;
+}
+.conditions li{
+    font-weight: bolder;
+    color: black;
+    margin: 0px 0px 8px;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+#container {
+    width: 100%;
+    height: 330px
+}
+
+#part1 {
+    width: 100%;
+    height: 280px;
+    background-color: #292929
+}
+
+#part2 {
+    width: 100%;
+    height: 50px;
+    background-color: black;
+    position: relative;
+    top: -15px
+}
+
+#companyinfo {
+    width: 14%;
+    height: 280px;
+    position: relative;
+    left: 8%;
+    top: 30px
+}
+
+#sitelink {
+    font-size: 35px;
+    color: #f44336
+}
+
+#sitelink:hover {
+    color: #e65100
+}
+
+#title {
+    color: gray;
+    position: relative;
+    top: 0px;
+    font-size: 14.1px
+}
+
+#detail {
+    color: #aaa7a7;
+    font-size: 16px
+}
+
+#explore {
+    width: 14%;
+    height: 280px;
+    position: relative;
+    top: -235px;
+    left: 29%
+}
+
+#txt1,
+#txt2,
+#txt3,
+#txt4,
+#txt5 {
+    color: white;
+    font-size: 20px
+}
+
+.link {
+    margin-bottom: -5px;
+    display: flex;
+    width: 90px;
+    height: 40px;
+    color: #aaa7a7;
+    background-color: transparent;
+    border-top: 2px solid white;
+    position: relative;
+    top: -10px;
+    text-decoration: none;
+}
+.pum{
+    display: block;
+}
+
+.link:hover,
+.link1:hover {
+    color: #e65100
+}
+
+#visit {
+    width: 14%;
+    height: 280px;
+    position: relative;
+    top: -515px;
+    left: 42%
+}
+
+.text {
+    color: #aaa7a7;
+    font-size: 14px;
+    margin-top: -10px
+}
+
+#legal {
+    width: 14%;
+    height: 280px;
+    position: relative;
+    top: -800px;
+    left: 59.5%
+}
+
+.link1 {
+    display: flex;
+    width: 150px;
+    height: 40px;
+    color: #aaa7a7;
+    background-color: transparent;
+    border-top: 2px solid white;
+    position: relative;
+    text-decoration: none;
+    top: -10px;
+    margin-top: 7px
+}
+
+#subscribe {
+    position: relative;
+    top: -1080px;
+    left: 78%;
+    width: 14%;
+    height: 280px
+}
+
+#email {
+    color: white;
+    position: relative;
+    top: -20px
+}
+
+.btn {
+    position: relative;
+    top: -10px
+}
+
+#txt5 {
+    position: relative;
+    top: 0px
+}
+
+.social {
+    position: relative;
+    top: -5px;
+    margin-right: 10px;
+    color: white;
+    cursor: pointer
+}
+
+.fa-facebook-square:hover {
+    color: #3B579D
+}
+
+.fa-linkedin:hover {
+    color: #007BB6
+}
+
+.fa-twitter-square:hover {
+    color: #2CAAE1
+}
+
+#txt6 {
+    color: white;
+    position: relative;
+    top: 13px;
+
+    width: 80%;
+    color: #aaa7a7
+}
+
+.material-icons {
+    position: relative;
+    top: 3px
+}
+
+@media only screen and (max-width:1000px) {
+    #companyinfo {
+        width: 20%
+    }
+
+    #sitelink {
+        font-size: 30px
+    }
+
+    #txt5,
+    #txt4 {
+        font-size: 17px
+    }
+
+    #txt5,
+    .social {
+        position: relative;
+        top: -5px
+    }
+}
+
+@media only screen and (max-width:850px) {
+    #companyinfo {
+        position: relative;
+        left: 3%
+    }
+
+    #txt6 {
+        position: relative;
+        left: 3%
+    }
+
+    #txt1,
+    #txt2,
+    #txt3,
+    #txt4,
+    #txt5 {
+        font-size: 15px
+    }
+
+    #explore {
+        position: relative;
+        top: -240px;
+        left: 26%
+    }
+
+    #sitelink {
+        font-size: 25px
+    }
+
+    #detail {
+        font-size: 13px
+    }
+
+    .link {
+        width: 60px
+    }
+
+    #visit {
+        position: relative;
+        top: -520px;
+        left: 37%
+    }
+
+    .text {
+        font-size: 13px
+    }
+
+    #legal {
+        position: relative;
+        top: -800px;
+        left: 54%
+    }
+
+    #subscribe {
+        position: relative;
+        top: -1080px;
+        left: 76%;
+        width: 20%
+    }
+
+    #txt5,
+    .social {
+        position: relative;
+        left: -110%;
+        top: px
+    }
+
+    #email,
+    .btn {
+        position: relative;
+        top: 0px
+    }
+
+    #part1 {
+        height: 250px
+    }
+}
+
+
+@media screen and (max-width: 700px) {
+    .row {   
+      flex-direction: column;
+    }
+  }
+  
+
+  @media screen and (max-width: 400px) {
+    .navbar a {
+      float: none;
+      width: 100%;
+    }
+  }
+  /* ----------------------------------------------
+ * Generated by Animista on 2021-1-11 14:26:1
+ * Licensed under FreeBSD License.
+ * See http://animista.net/license for more info. 
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+
+/**
+ * ----------------------------------------
+ * animation heartbeat
+ * ----------------------------------------
+ */
+@keyframes heartbeat {
+    from {
+      transform: scale(1);
+      transform-origin: center center;
+      animation-timing-function: ease-out;
+    }
+  
+    10% {
+      transform: scale(0.91);
+      animation-timing-function: ease-in;
+    }
+  
+    17% {
+      transform: scale(0.98);
+      animation-timing-function: ease-out;
+    }
+  
+    33% {
+      transform: scale(0.87);
+      animation-timing-function: ease-in;
+    }
+  
+    45% {
+      transform: scale(1);
+      animation-timing-function: ease-out;
+    }
+  }
+  
+  .heartbeat:hover {
+    animation: heartbeat 1.5s ease-in-out both;
+  }

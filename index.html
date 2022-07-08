@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+    integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="./index.css">
+  <!--FAVICON-->
+  <link rel="icon" type="image/ico" href="./img/logo.ico" />
+  <title>Markflix</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap');
+  </style>
+</head>
+
+<body>
+  <!--BARRA DE NAVEGAÇÃO-->
+  <div class="pum navbar sticky navbar-expand-sm navbar-dark bg-dark d-flex flex-row container-fluid"
+    style="margin: 0; padding: 0; align-items: center; justify-content: center" id="navbar">
+    <div class=" container-fluid">
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav w-100 d-flex justify-content-around">
+          <nav class="navbar navbar-light">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="./index.html">
+                <img style="height: 40px;" src="./img/logoint.png" alt="" class=""></a>
+            </div>
+          </nav>
+          <button type="button" onclick="window.location.href='#pesquisa'" class="btn btn-secondary"
+            style="height: 38px; margin-top: 25px;">Pesquisar</button>
+          <button type="button" onclick="window.location.href='./gen.html'" class="btn btn-secondary"
+            style="height: 38px; margin-top: 25px;">Pesquisa por gênero</button>
+          <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton2"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              Minha conta
+            </button>
+            <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton2">
+              <li><a class="dropdown-item" href="./config.html">Configurações</a></li>
+              <li><a class="dropdown-item" href="./help.html">Ajuda</a></li>
+              <li><a class="dropdown-item" href="./login.html">Sair</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--CARROSEL ANIMADO-->
+  <div id="carouselExampleFade" class="carousel slide carousel-fade letra" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="./img/tarantino.png" class="d-block w-100" alt="Mês-Tarantino" style="height: 500px;">
+        <div class="carousel-caption d-none d-md-block" style="font-size: 20px;">
+          <h3>Janeiro é do Quentin Tarantino!</h3>
+          <p>Conheça os brutais filmes do diretor.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="./img/flu.jpg" class="d-block w-100" alt="Lista-Pandemia" style="height: 500px;">
+        <div class="carousel-caption d-none d-md-block" style="font-size: 20px;">
+          <h3>Filmes que te fazem ficar em casa!</h3>
+          <p>Conheça nossa lista de filmes de pandemia.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="./img/horror.jpg" class="d-block w-100" alt="Terror-Horror" style="height: 500px;">
+        <div class="carousel-caption d-none d-md-block" style="font-size: 20px;">
+          <h3>Terror ou Horror?</h3>
+          <p>Assista nossa lista e saiba a diferença.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="./img/curtas.jpg" class="d-block w-100" alt="Lista-Curtas" style="height: 500px;">
+        <div class="carousel-caption d-none d-md-block" style="font-size: 20px;">
+          <h3>Tão bons quanto curtos.</h3>
+          <p>Curtas metragens excelentes para todos os gostos.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="./img/lusobr.jpg" class="d-block w-100" alt="Lista-PtBr" style="height: 500px;">
+        <div class="carousel-caption d-none d-md-block" style="font-size: 20px;">
+          <h3>Filmes que valem ouro!</h3>
+          <p>Os filmes brasileiros mais assistidos em Portugal.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="./img/leve.jpg" class="d-block w-100" alt="Lista-Leve" style="height: 500px;">
+        <div class="carousel-caption d-none d-md-block" style="font-size: 20px;">
+          <h3>Dia cansativo?</h3>
+          <p>Entretenimento leve é uma ótima ideia.</p>
+        </div>
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleFade" role="button" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </a>
+  </div>
+
+  <!--INPUT DE PESQUISA E BOTÕES DE CLASSIFICAÇÃO-->
+  <div class="container bonitotudo bg-dark" style="width: 100%; margin-bottom: 30px;">
+    <div class="mb-3 bonitoinput" id="cxinput">
+      <input required type="text" class="form-control" id="pesquisa"
+        placeholder="Digite aqui o nome do seu filme, série, ator ou diretor.">
+    </div>
+    <!--BOTÕES DE CLASSIFICAÇÃO-->
+    <div class="container bonitoradio" id="radios">
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="flexRadioDefault" id="radiofilme">
+        <label class="form-check-label" for="flexRadioDefault1">
+          Filmes e Séries
+        </label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="flexRadioDefault" id="radiodiretor">
+        <label class="form-check-label" for="flexRadioDefault2">
+          Diretores
+        </label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="flexRadioDefault" id="radioator">
+        <label class="form-check-label" for="flexRadioDefault2">
+          Atores
+        </label>
+      </div>
+      <button id="ibm" type="button" style="margin-top: 18px;" onclick="cosmia()"
+        class="btn btn-danger">Pesquisar</button>
+    </div>
+  </div>
+
+  <!--DADOS DO FILMES-->
+  <div>
+    <div>
+      <div id="poster" class="container d-none" style="height: 100%; width: 100%;">
+      </div>
+      <div id="tudofilme" class=" d-none justify-content container-fluid"
+        style="margin-top: 15px; margin-bottom: 25px; text-align: center; justify-content: center; align-items: center; background-color: rgb(39, 39, 39); width: 75%;">
+        <p id="d1" style="font-size: 30px;"></p>
+        <p id="d2"></p>
+
+        <!--PROCURAR MEDIA QUERY-->
+        <div class="d-flex flex-row filme1" style="align-items: center;">
+          <p id="d3" style="margin-right: 25px;"></p>
+          <p id="d4" style="margin-right: 25px;"></p>
+          <p id="d5" style="margin-right: 25px;"></p>
+          <p id="d6" style="margin-right: 25px;"></p>
+        </div>
+
+        <p id="d7"></p>
+
+        <div class="filme1">
+          <p id="d8" style="margin-right: 25px;"></p>
+          <p id="d9"></p>
+        </div>
+
+      </div>
+      <div id="tudodiretor" class="container-fluid justify-content d-none"
+        style="margin-top: 15px; margin-bottom: 25px; text-align: center; justify-content: center; align-items: center; background-color: rgb(39, 39, 39); width: 55%;">
+        <p id="nome" class="filme1" style="font-size: 30px;"></p>
+        <div>
+          <p id="obra" class="filme1"></p>
+        </div>
+      </div>
+      <div id="tudoerro" class=" d-none justify-content container-fluid"
+        style="margin-top: 30px; margin-bottom: 35px; text-align: center; justify-content: center; align-items: center; background-color: rgb(39, 39, 39); width: 500px; height: 135px;">
+        <h2>Nada foi encontrado ;(</h2>
+        <h5>Será que é assim mesmo que se escreve?</h5>
+        <h5>Pesquisou diretor mas clicou no botão para pesquisar filmes?</h5>
+      </div>
+    </div>
+  </div>
+
+  <!--FINAL DA PÁGINA-->
+  <div id="container">
+    <div id="part1">
+      <div id="companyinfo" style="justify-items: center;"> <a id="sitelink" href="#"><img src="./img/logoint.png"
+            style="height: 50px;" alt=""></a>
+        <p id="title" style="margin-left: 13px;">Seu stream favorito.</p>
+        <p id="detail">Os melhores filmes e séries, de drama a ação, você encontra aqui.</p>
+      </div>
+      <div id="explore">
+        <p id="txt1">Explore</p>
+        <a class="link" href="#navbar">Início</a>
+        <a class="link" href="./about.html">Sobre nós</a>
+        <a class="link" href="#pesquisa">Pesquise</a>
+      </div>
+      <div id="visit">
+        <p id="txt2">Visite-nos</p>
+        <p class="text">Complexo residêncial universitário Santiago</p>
+        <p class="text">Blocos 05 e 14</p>
+        <p class="text">Telemóvel:+351 555 312 231</p>
+        <p class="text">mpeterson.neves@ua.pt</p>
+        <p class="text">vinnicius.sandes@ua.pt</p>
+      </div>
+      <div id="legal">
+        <p id="txt3">Legal</p>
+        <a class="link1" href="./conditions.html">Termos e condições</a>
+        <a class="link1" href="./privacy.html">Política de privacidade</a>
+      </div>
+      <div id="subscribe">
+        <p id="txt5">Conecte-se conosco</p> <i class="fab fa-facebook-square social fa-2x"></i> <i
+          class="fab fa-linkedin social fa-2x"></i> <i class="fab fa-twitter-square social fa-2x"></i>
+      </div>
+    </div>
+    <div id="part2">
+      <p id="txt6" style="margin-left: 250px;">© 2020 Copyright: Marcus Peterson Neves (101082) e Marcos Vinnicius
+        (1101110) - Universidade de Aveiro.</p>
+    </div>
+  </div>
+
+  <!--SCRIPT'S-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+    crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"
+    integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="./index.js"></script>
+</body>
+
+</html>
